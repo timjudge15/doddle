@@ -10,9 +10,7 @@ For example:
 1. User enters amount they wish to send to a friend. 
 2. This information is sent from app.html to the doddlepay function in the main.py file via a post request (a backend to frontend messeging system)
 3. The doddlepay function then calls the transaction fucntion in transaction.py sending the recipientemail, senderusername and transferamount. 
-(this line here scripts.userdata.transactions.doddlePay(recipientemail, senderusername, transferamount))
-
-We are now in the doddle pay function in transactions.py
+(this line here scripts.userdata.transactions.doddlePay(recipientemail, senderusername, transferamount))   We are now in the doddlepay function in transactions.py
 4. The users information is then checked in the database to make sure the recipient exists. 
 5. 5. We then retrieve the recipients public key (this is the blockchain address we are sending the money to)
 6. We also retrieve the senders public and private key, which are used to sign and send transactions.
